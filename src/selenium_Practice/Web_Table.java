@@ -17,6 +17,8 @@ public class Web_Table {
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		driver.get("https://www.worldometers.info/coronavirus/");
 		driver.manage().window().maximize();
+		
+	
 	}
 
 	public static void allHaeader() {
@@ -31,7 +33,7 @@ public class Web_Table {
 		List<WebElement> alldata = driver
 				.findElements(By.xpath("//table[@id='main_table_countries_today']/tbody[not(@class)]/tr/td"));
 		for (WebElement data : alldata) {
-			Thread.sleep(0050);
+//			Thread.sleep(0050);
 			System.out.println(data.getText());
 		}
 	}
@@ -48,7 +50,7 @@ public class Web_Table {
 		List<WebElement> coloumwise = driver
 				.findElements(By.xpath("//table[@id='main_table_countries_today']/tbody[not(@class)]/tr/td[2]"));
 		for (WebElement coloum : coloumwise) {
-			Thread.sleep(0050);
+//			Thread.sleep(0050);
 			System.out.println(coloum.getText());
 		}
 	}
