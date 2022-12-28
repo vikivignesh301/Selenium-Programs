@@ -1,5 +1,6 @@
 package com.selenium;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -15,7 +16,7 @@ public class Chrome_Options {
 		option.addArguments("start-maximized");
 		WebDriver driver = new ChromeDriver(option);
 		driver.get("https://www.facebook.com/");
-		
+
 	}
 
 }

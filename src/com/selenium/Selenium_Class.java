@@ -22,6 +22,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.safari.SafariDriver.WindowType;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -48,10 +49,11 @@ public class Selenium_Class {
 //		wd.get("https://www.myntra.com/");   // To find Total Links in webpage
 		wd.get("https://www.javatpoint.com/"); // Absolute X-Path
 		wd.manage().window().maximize(); // maximize
+					
 //		// =================================//navigation methods==========================================
 //		wd.navigate().to("https://www.instagram.com/"); // change to another url
 //		wd.manage().window().maximize();
-//		
+		
 //		wd.navigate().back(); // navigate back to facebook
 //		
 //		wd.navigate().forward(); // navigate forward to instagram
@@ -139,7 +141,7 @@ public class Selenium_Class {
 //		WebElement day = wd.findElement(By.id("day"));         //by using selectby values
 //		Select s = new Select(day);
 //		s.selectByValue("22");
-//		
+		
 //		WebElement month = wd.findElement(By.id("month"));    //by using selectbyindex
 //		Select s1 = new Select(month);
 //		s1.selectByIndex(3);
